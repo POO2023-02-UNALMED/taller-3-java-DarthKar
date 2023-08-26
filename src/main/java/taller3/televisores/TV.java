@@ -68,11 +68,7 @@ public class TV {
 		return this.estado;
 	}
 	public void canalUp() {
-		if (this.estado == true) {
-			if(canal>=1&&canal<120) {
-				canal++;
-			}
-		}
+		this.setCanal(canal+1);
 	}
 	public void canalDown() {
 		if (estado == true) {
