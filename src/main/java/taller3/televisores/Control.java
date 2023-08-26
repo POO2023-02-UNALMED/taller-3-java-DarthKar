@@ -14,14 +14,10 @@ public class Control {
 		this.tv.turnOn();
 	}
 	public void setCanal(int canal) {
-		if (tv.getEstado() && canal>=1 && canal<=120) {
 			this.tv.setCanal(canal);
-		}
 	}
 	public void setVolumen(int volumen) {
-		if (tv.getEstado() && volumen>=0 && volumen<=7) {
 			this.tv.setVolumen(volumen);
-		}
 	}
 	public void canalUp() {
 		this.tv.canalUp();
